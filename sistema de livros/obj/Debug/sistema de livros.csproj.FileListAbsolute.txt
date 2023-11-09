@@ -1,0 +1,8 @@
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\bin\Debug\sistema de livros.exe.config
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\bin\Debug\sistema de livros.exe
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\bin\Debug\sistema de livros.pdb
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\obj\Debug\sistema de livros.csproj.AssemblyReference.cache
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\obj\Debug\sistema de livros.csproj.SuggestedBindingRedirects.cache
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\obj\Debug\sistema de livros.csproj.CoreCompileInputs.cache
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\obj\Debug\sistema de livros.exe
+C:\Users\davi.vpvpereira\source\repos\sistema de livros\sistema de livros\obj\Debug\sistema de livros.pdb
