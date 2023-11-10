@@ -13,8 +13,7 @@ namespace sistemaLivros
             Control controle = new Control();
             controle.Operacao();
             Console.ReadLine();
-        }//fim do main
-    }//fim do program
+        }//fim do método main
+    }//fim de program
 }//fim do projeto
-
 

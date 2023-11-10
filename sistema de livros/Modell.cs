@@ -14,13 +14,19 @@ namespace sistemaLivros
         public string endereco;
         public string telefone;
         public string nascimento;
-        public int book;
-        public int opsao;
         public int resposta;
+        public string contato;
+        public int opcao;
 
         public Model()
         {
-            ConsultarOpsao = -1;
+            FazerReserva = -1;
+        }
+
+        public int FazerReserva
+        {
+            get { return this.opcao; }
+            set { this.opcao = value; }
         }
 
         public void loginSenha()
@@ -28,7 +34,7 @@ namespace sistemaLivros
             Console.WriteLine("Você já possui cadastro? \n1. Sim\n2. Não");
             resposta = Convert.ToInt32(Console.ReadLine());
             if (resposta == 1)
-            { 
+            {
                 Console.WriteLine("Informe seu login: ");
                 login = Convert.ToString(Console.ReadLine());
                 Console.WriteLine("Informe sua senha: ");
@@ -48,57 +54,53 @@ namespace sistemaLivros
                 login = Convert.ToString(Console.ReadLine());
                 Console.WriteLine("Informe sua senha: ");
                 senha = Convert.ToString(Console.ReadLine());
+                Console.WriteLine("CADASTRO CONCLUÍDO!");
+
+                Console.WriteLine("Informe seu login: ");
+                if (Console.ReadLine() != login)
+                do
+                  {
+                      {
+                        Console.WriteLine("Usuário não identificado! \n " +
+                            "Informe seu login: ");
+                      }
+                   } while (Console.ReadLine() != login);
+
+                Console.WriteLine("Informe sua senha: ");
+                if (Console.ReadLine() != senha)
+                    do
+                    {
+                        {
+                            Console.WriteLine("Senha incorreta! \n " +
+                                "Informe sua senha: ");
+                        }
+                    } while (Console.ReadLine() != senha);
+
+                Console.WriteLine("Seja Bem vindo(a)!");
             }
         }
 
         //OPÇÃO DE LIVROS
-        public int ConsultarOpsao
+
+        public void Reserva()
         {
-            get { return this.opsao; }
-            set { this.opsao = value; }
-        }
-        public void books()
-        {
-            Console.WriteLine("Escolha um dos livros abaixo: \n\n" +
-                "0. Sair \n" +
-                "1. Harry Potter \n" +
-                "2. Senhor dos Anéis \n" +
-                "3. Percy Jackson \n");
-            opsao = Convert.ToInt32(Console.ReadLine());
-        }
-        public void operacao3()
-        {
-            books();//mostrar as opçoes de livros em tela
-            switch (ConsultarOpsao)
+            Console.WriteLine("Livro indisponível ): Gostaria de fazer a reserva do livro? \n" +
+                              "1. Sim \n" +
+                              "2. Não \n");
+            FazerReserva = Convert.ToInt32(Console.ReadLine());
+
+            switch (FazerReserva)
             {
-                case 0:
-                    Console.WriteLine("Obrigado!");
-                    break;
                 case 1:
-                    Console.WriteLine("Harry Potter");
+                    Console.WriteLine("Informe seu e-mail ou número de telefone: ");
+                    contato = Console.ReadLine();
+
+                    Console.WriteLine("Você será notificado(a) quando este livro ou livros estiverem disponíveis! \n");
                     break;
                 case 2:
-                    Console.WriteLine("Senhor dos Anéis");
-                    break;
-                case 3:
-                    Console.WriteLine("Percy Jackson");
-                    break;
-                case 4:
-                    Console.WriteLine();
                     break;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }
